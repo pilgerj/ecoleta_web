@@ -1,0 +1,92 @@
+ npm init -y
+>> criar o package.json do projeto
+
+ npm install express
+>> instalar o express
+
+ npm install @types/express -D
+>> instalar as tipagens do express
+
+ npm install ts-node -D
+>> instalar ts-node , o -D é p o modo desenvolvimento, nao ira p ambiente de producao.
+
+ npm install typescript -D
+>>install typescript
+ 
+ npx tsc --init 
+>> criar o arquivo de config do tsc (typescript)
+
+ npx ts-node-dev src/server.ts
+>> executar modo dev
+
+ npm install ts-node-dev -D
+>> sempre q houver alteracao, ira executar dnv
+
+
+ no arquivo 'package.json':
+ "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },
+>> para executar: npm run dev
+
+npx create-react-app web --template=typescript
+>> criar projeto react
+
+ npm start
+>> startar o projeto react (App.tsc)
+
+npm install knex
+>> instalar o knex, fw para banco de dados
+
+npm install sqlite3
+
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+>> rodar scripts migrations 
+
+ no arquivo 'package.json':
+ "scripts": {
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
+  },
+>> para executar: npm run knex:migrate
+
+npm install cors
+npm install @types/cors
+
+
+--fazer o seguinte:
+CTRL + SHIFT + P >> JSON >> Preferences: Open Settings ())JSON)
+>> dentro do arquivo, inserir os 2 parameters:
+ "emmet.syntaxProfiles": {"javascript": "jsx"},
+ "emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+
+JSX >> escrever HTML usando javascript.
+
+
+---usando estado react
+  const [counter, setCounter] = useState(0) 
+  // [valor do estado, funcao p atualizar o valor]
+  // useState(0) >> sera usado a funcao de 'estado' do react
+
+  function cpp(){
+    setCounter(counter + 1)
+  }
+
+  <h1>Conteudo: {counter}</h1>
+
+npm install react-icons
+
+npm install react-router-dom
+npm install @types/react-router-dom -D
+>> usar para fazer roteamento
+
+npm install leaflet react-leaflet 
+npm install @types/react-leaflet
+>> instalar p usar o mapa do leflet
+
+
+npm install axios 
+>> usar p fazer requisicoes do react para o node
+
+>> para consultar integracoes do typescript com react:
+>> pesquisar no google "typescript react cheat sheet"
